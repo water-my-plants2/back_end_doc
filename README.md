@@ -159,6 +159,22 @@ https://watermyplants02.herokuapp.com
     user_email,                                      
     created_at                                  
 }
+
+[DELETE] plant restricted (/api/plants/:plantId)
+
+returns                                         
+
+{                                        
+        plant_id,                            
+        plant_nickname,                        
+        plant_species,                
+        h2ofrequency,                         
+        plant_image,                         
+        user_id,                              
+        created_at,               
+        updated_at
+    
+}
    
 Login_credential: these credentials can be used to test the login and end points, if you did not register yet                                                      
 username: lambda                                                                                                                                                  
