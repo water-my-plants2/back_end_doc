@@ -199,6 +199,29 @@ https://watermyplants02.herokuapp.com
     h2ofrequency
 }
 
+[PUT] plant restricted (/api/plants/:plantId)
+
+*receives*
+
+{
+
+    plant_nickname,
+    plant_species,
+    h2ofrequency
+}
+
+*returns*
+
+{
+
+    user_id,
+    plant_nickname,
+    plant_species,
+    h2ofrequency,
+    plant_image
+}
+
+
 [DELETE] plant restricted (/api/plants/:plantId)
 
 *returns*                                       
