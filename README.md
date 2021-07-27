@@ -1,12 +1,11 @@
 
+
 #  Build Week - unit 4 - Water My Plants
 
 ## Base URL
+https://watermyplants02.herokuapp.com
 
-
-![Screen Shot 2021-07-26 at 7 26 48 PM](https://user-images.githubusercontent.com/55516943/127085563-0a3d6e17-9282-4e3d-88a2-4f3fe540efc4.png)
-
-
+![Screen Shot 2021-07-26 at 9 27 35 PM](https://user-images.githubusercontent.com/55516943/127095511-2ae5a9b9-fbce-4c08-9f71-efc6d9ee797f.png)
 
 ## API endpoints
 
@@ -14,7 +13,7 @@
 
 | Auth | Endpoint           | Required                  | Restrictions | Notes                                             |
 | -----| ------------------ | --------------------------| -------------| ------------------------------------------------- |
-| POST | /api/auth/register | username, password, phone | Username & phone must be unique| Creates a new user with auto Id.|
+| POST | /api/auth/register | username, password, phone | Username: unique,min 3 & max 25 chars, password:min 8 & max 25 chars & phone: unique, ###-###-#### format| Creates a new user with auto Id.|
 | POST | /api/auth/login    | username, password        | None         | Returns a welcome message and the JSON Web Token. |
 
 
