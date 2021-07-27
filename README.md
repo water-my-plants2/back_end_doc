@@ -37,7 +37,7 @@ https://watermyplants02.herokuapp.com
 
 
 
-Login_credential:these credentials can be used to test the login and end points, if you did not register yet
-username: lambda
+Login_credential: these credentials can be used to test the login and end points, if you did not register yet                                                      
+username: lambda                                                                                                                                                  
 password: lambda123
 
