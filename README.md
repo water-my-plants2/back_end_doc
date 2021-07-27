@@ -21,10 +21,9 @@ https://watermyplants02.herokuapp.com
 
 | Auth | Endpoint              | Required            | Restrictions      -| Notes                                    |
 | -----| --------------------- | --------------------| -------------------|------------------------------------------|
-| GET  | /api/users/           | None                | authenticated user | Returns the specified user object.       |
-| GET  | /api/users/:id        | None                | authenticated user | Returns the specified user object.       |
-| GET  | /api/users/:id/plants | None                | authenticated user | Returns array of users plants.           |
-| PUT  | /api/users/:id        | username, phone, email |authenticated user| Returns updated user object.                |
+| GET  | /api/users/:user_id        | None           | authenticated user | Returns the specified user object.       |
+| GET  | /api/users/:user_id/plants | None           | authenticated user | Returns array of users plants.           |
+| PUT  | /api/users/:user_id        | username, phone, email |authenticated user| Returns updated user object.       |
 
 
 ### Plants
@@ -33,8 +32,8 @@ https://watermyplants02.herokuapp.com
 | -------| --------------- | --------------------| ----------------------| ------------------------------------------- |
 | GET    | /api/plants/    | None                | authenticated user    |  Returns array of All plants.               |
 | POST   | /api/plants/    | nickname, species, h2oFrequency, userId | authenticated user        | Returns new plant object. |
-| PUT    | /api/plants/:id | userId, nickname, species, h2oFrequency | authenticated user        | Returns updated plant object.  |
-| DELETE | /api/plants/:id | plant_id            | authenticated user | Returns deleted record if successfully deleted. |
+| PUT    | /api/plants/:plant_id | userId, nickname, species, h2oFrequency | authenticated user        | Returns updated plant object.  |
+| DELETE | /api/plants/:plant_id | plant_id            | authenticated user | Returns deleted record if successfully deleted. |
 
 
 ### Detailed_endpoints
