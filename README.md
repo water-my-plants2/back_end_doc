@@ -21,9 +21,9 @@ https://watermyplants02.herokuapp.com
 
 | Auth | Endpoint              | Required            | Restrictions      -| Notes                                    |
 | -----| --------------------- | --------------------| -------------------|------------------------------------------|
-| GET  | /api/users/:id        | None                | authenticated user | Returns the specified user object.        |
+| GET  | /api/users/           | None                | authenticated user | Returns the specified user object.       |
+| GET  | /api/users/:id        | None                | authenticated user | Returns the specified user object.       |
 | GET  | /api/users/:id/plants | None                | authenticated user | Returns array of users plants.           |
-| PUT  | /api/users/:id        | userId, nickname, species, h2oFrequency  | authenticated user |  Returns updated user object.|
 
 
 ### Plants
@@ -36,7 +36,110 @@ https://watermyplants02.herokuapp.com
 | DELETE | /api/plants/:id | plant_id            | authenticated user | Returns deleted record if successfully deleted. |
 
 
+### Detailed_endpoints
 
+[POST] REGISTER (/api/auth/register). 
+---------------------
+
+*receives*    
+
+{  
+  username,  
+  password,                                                                                                                                                       
+  phone,                                                                                                                                                        
+  email (optional)                                                                                                                                                 
+}   
+
+*returns*    
+{   
+  user_id,  
+  username,  
+  password   
+}
+
+[POST] LOGIN (/api/auth/login). 
+---------------------
+
+*receives*  
+{  
+  username,  
+  password  
+}
+
+*returns*      
+{  
+  message,    
+  token  
+} 
+
+[GET] All users *restricted* (/api/users). 
+---------------------
+
+*returns*    
+
+[
+    
+    {  
+        
+        user_id,
+        username,
+        password,
+        user_email,
+        user_phone,
+        created_at
+    },  
+    {  
+        user_id,
+        username,
+        password,
+        user_email,
+        user_phone,
+        created_at
+    },  
+    ...    
+]   
+
+[GET] user by ID *restricted* (api/users/:userId)   
+---------------------
+
+*returns*    
+
+{  
+
+    user_id,
+    username,
+    password,
+    user_email,
+    user_phone,
+    created_at  
+ }
+ 
+ [GET] plants by userId *restricted* (/api/users/:userId/plants)
+---------------------
+
+*returns*  
+
+[
+    
+    {
+        user_id,
+        username,
+        plant_id,
+        plant_nickname,
+        plant_species,
+        h2ofrequency
+    },
+    {
+        user_id,
+        username,
+        plant_id,
+        plant_nickname,
+        plant_species,
+        h2ofrequency
+    }
+]
+    
+   
 Login_credential: these credentials can be used to test the login and end points, if you did not register yet                                                      
 username: lambda                                                                                                                                                  
 password: lambda123
