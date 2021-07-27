@@ -45,17 +45,17 @@ https://watermyplants02.herokuapp.com
 *receives*    
 
 {  
-  username,  
-  password,                                                                                                                                                       
-  phone,                                                                                                                                                        
-  email (optional)                                                                                                                                                 
+    username,  
+    password,                                                                                                                                                         phone,                                                                                                                                                        
+    email (optional)                                                                                                                                                 
 }   
 
 *returns*    
-{   
-  user_id,  
-  username,  
-  password   
+{  
+
+    user_id,  
+    username,  
+    password   
 }
 
 [POST] LOGIN (/api/auth/login). 
@@ -63,14 +63,16 @@ https://watermyplants02.herokuapp.com
 
 *receives*  
 {  
-  username,  
-  password  
+
+    username,  
+    password  
 }
 
 *returns*      
 {  
-  message,    
-  token  
+
+    message,    
+    token  
 } 
 
 
@@ -120,6 +122,7 @@ https://watermyplants02.herokuapp.com
 *receives*  
 
 {  
+
     username,          
     user_phone,                                                                    
     user_email,                                    
@@ -127,18 +130,46 @@ https://watermyplants02.herokuapp.com
 
 *returns*    
 {  
+
     user_id,
     username,                                 
     user_phone,                                 
     user_email,                                      
     created_at                                  
 }
+[GET] plants (/api/plants/)
+
+*returns*
+[
+
+    {
+        plant_id,
+        plant_nickname,
+        plant_species,
+        h2ofrequency,
+        plant_image,
+        user_id,
+        created_at,
+        updated_at
+    },
+    {
+        plant_id,
+        plant_nickname,
+        plant_species,
+        h2ofrequency,
+        plant_image,
+        user_id,
+        created_at,
+        updated_at
+    },
+ ]
 
 [DELETE] plant restricted (/api/plants/:plantId)
 
-returns                                         
+*returns*                                       
 
-{                                        
+{      
+
         plant_id,                            
         plant_nickname,                        
         plant_species,                
