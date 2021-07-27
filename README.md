@@ -31,6 +31,7 @@ https://watermyplants02.herokuapp.com
 | Auth   | Endpoint        | Required            | Restrictions          | Notes                                       |
 | -------| --------------- | --------------------| ----------------------| ------------------------------------------- |
 | GET    | /api/plants/    | None                | authenticated user    |  Returns array of All plants.               |
+| GET    | /api/plants/:plant_id | None          | authenticated user    |  Returns array of All plants.               |
 | POST   | /api/plants/    | nickname, species, h2oFrequency, userId | authenticated user        | Returns new plant object. |
 | PUT    | /api/plants/:plant_id | userId, nickname, species, h2oFrequency | authenticated user        | Returns updated plant object.  |
 | DELETE | /api/plants/:plant_id | plant_id            | authenticated user | Returns deleted record if successfully deleted. |
