@@ -163,6 +163,18 @@ https://watermyplants02.herokuapp.com
         updated_at
     },
  ]
+ 
+ [GET] plant by ID restricted (api/plants/:plantId)
+ 
+ *returns*
+ 
+ {
+ 
+    user_id,
+    plant_nickname,
+    plant_species,
+    h2ofrequency
+}
 
 [DELETE] plant restricted (/api/plants/:plantId)
 
