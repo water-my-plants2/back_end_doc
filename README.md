@@ -24,6 +24,7 @@ https://watermyplants02.herokuapp.com
 | GET  | /api/users/           | None                | authenticated user | Returns the specified user object.       |
 | GET  | /api/users/:id        | None                | authenticated user | Returns the specified user object.       |
 | GET  | /api/users/:id/plants | None                | authenticated user | Returns array of users plants.           |
+| PUT  | /api/users/:id        | username, phone, email |authenticated user| Returns updated user object.                |
 
 
 ### Plants
@@ -138,7 +139,26 @@ https://watermyplants02.herokuapp.com
         h2ofrequency
     }
 ]
-    
+
+[PUT] user *restricted* (/api/users/:userId)
+---------------------
+
+*receives*  
+
+{  
+    username,          
+    user_phone,                                                                    
+    user_email,                                    
+}
+
+*returns*    
+{  
+    user_id,
+    username,                                 
+    user_phone,                                 
+    user_email,                                      
+    created_at                                  
+}
    
 Login_credential: these credentials can be used to test the login and end points, if you did not register yet                                                      
 username: lambda                                                                                                                                                  
