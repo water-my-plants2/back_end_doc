@@ -73,32 +73,6 @@ https://watermyplants02.herokuapp.com
   token  
 } 
 
-[GET] All users *restricted* (/api/users). 
----------------------
-
-*returns*    
-
-[
-    
-    {  
-        
-        user_id,
-        username,
-        password,
-        user_email,
-        user_phone,
-        created_at
-    },  
-    {  
-        user_id,
-        username,
-        password,
-        user_email,
-        user_phone,
-        created_at
-    },  
-    ...    
-]   
 
 [GET] user by ID *restricted* (api/users/:userId)   
 ---------------------
