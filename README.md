@@ -1,11 +1,12 @@
 
 
+
 #  Build Week - unit 4 - Water My Plants
 
 ## Base URL
 https://watermyplants02.herokuapp.com
 
-![Screen Shot 2021-07-26 at 9 27 35 PM](https://user-images.githubusercontent.com/55516943/127095511-2ae5a9b9-fbce-4c08-9f71-efc6d9ee797f.png)
+![Screen Shot 2021-07-27 at 7 32 27 PM](https://user-images.githubusercontent.com/55516943/127254420-e706d71a-a89c-4c40-aa68-9f9785b8dd53.png)
 
 ## API endpoints
 
