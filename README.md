@@ -104,7 +104,8 @@ https://watermyplants02.herokuapp.com
         plant_id,
         plant_nickname,
         plant_species,
-        h2ofrequency
+        h2ofrequency,
+        plant_image
     },
     {
         user_id,
@@ -112,7 +113,8 @@ https://watermyplants02.herokuapp.com
         plant_id,
         plant_nickname,
         plant_species,
-        h2ofrequency
+        h2ofrequency,
+        plant_image
     }
 ]
 
@@ -173,7 +175,8 @@ https://watermyplants02.herokuapp.com
     user_id,
     plant_nickname,
     plant_species,
-    h2ofrequency
+    h2ofrequency,
+    plant_image
 }
 
 [POST] plants (/api/plants/)
@@ -185,7 +188,8 @@ https://watermyplants02.herokuapp.com
     user_id,
     plant_nickname,
     plant_species,
-    h2ofrequency
+    h2ofrequency,
+    plant_image
 }
 
 *returns*
@@ -196,7 +200,8 @@ https://watermyplants02.herokuapp.com
     plant_id,
     plant_nickname,
     plant_species,
-    h2ofrequency
+    h2ofrequency,
+    plant_image
 }
 
 [PUT] plant restricted (/api/plants/:plantId)
@@ -208,7 +213,8 @@ https://watermyplants02.herokuapp.com
     user_id,
     plant_nickname,
     plant_species,
-    h2ofrequency
+    h2ofrequency,
+    plant_image
 }
 
 *returns*
