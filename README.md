@@ -205,6 +205,7 @@ https://watermyplants02.herokuapp.com
 
 {
 
+    user_id,
     plant_nickname,
     plant_species,
     h2ofrequency
